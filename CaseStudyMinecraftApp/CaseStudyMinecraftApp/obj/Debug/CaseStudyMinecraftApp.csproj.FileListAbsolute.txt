@@ -1,0 +1,11 @@
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\bin\Debug\CaseStudyMinecraftApp.exe.config
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\bin\Debug\CaseStudyMinecraftApp.exe
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\bin\Debug\CaseStudyMinecraftApp.pdb
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\obj\Debug\CaseStudyMinecraftApp.csproj.AssemblyReference.cache
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\obj\Debug\CaseStudyMinecraftApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\obj\Debug\CaseStudyMinecraftApp.apphome.resources
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\obj\Debug\CaseStudyMinecraftApp.Properties.Resources.resources
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\obj\Debug\CaseStudyMinecraftApp.csproj.GenerateResource.cache
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\obj\Debug\CaseStudyMinecraftApp.csproj.CoreCompileInputs.cache
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\obj\Debug\CaseStudyMinecraftApp.exe
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\obj\Debug\CaseStudyMinecraftApp.pdb
