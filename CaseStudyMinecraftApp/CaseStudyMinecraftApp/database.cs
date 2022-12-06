@@ -23,7 +23,7 @@ namespace CaseStudyMinecraftApp
 
         static void ReadData(SQLiteConnection conn)
         {
-            conn.Close();
+            
         }
     }
 }
