@@ -10,6 +10,6 @@ namespace CaseStudyMinecraftApp
 {
     internal class database
     {
-        string ConnectionString = "Data Source=database.db";
+        private const string ConnectionString = "Data Source=database.db";
     }
 }

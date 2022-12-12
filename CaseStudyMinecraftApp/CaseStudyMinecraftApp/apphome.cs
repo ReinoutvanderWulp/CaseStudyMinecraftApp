@@ -24,13 +24,25 @@ namespace CaseStudyMinecraftApp
 
         private void listbox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string text = listbox.GetItemText(listbox.SelectedItem);
-            MessageBox.Show("U heeft gekozen voor de categorie: " + text + ". \r" + "Klik op 'OK' om de gegevens in de door u geselecteerde categorie te raadplegen!");
+            try
+            {
+                string text = listbox.GetItemText(listbox.SelectedItem);
+                MessageBox.Show("U heeft gekozen voor de categorie: " + text + ". \r" + "Klik op 'OK' om de gegevens in de door u geselecteerde categorie te raadplegen!");
+            }
+            catch (Exception ex) {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void exitbutton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Weet u zeker dat u de app wil verlaten?");
+            try
+            {
+                MessageBox.Show("Weet u zeker dat u de app wil verlaten?");
+            }
+            catch (Exception ex) {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
