@@ -71,7 +71,6 @@
     <Compile Include="apphome.Designer.cs">
       <DependentUpon>apphome.cs</DependentUpon>
     </Compile>
-    <Compile Include="database.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="apphome.resx">

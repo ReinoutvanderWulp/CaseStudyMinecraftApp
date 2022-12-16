@@ -9,3 +9,12 @@ C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseSt
 C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\obj\Debug\CaseStudyMinecraftApp.csproj.CoreCompileInputs.cache
 C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\obj\Debug\CaseStudyMinecraftApp.exe
 C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\obj\Debug\CaseStudyMinecraftApp.pdb
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\bin\Debug\EntityFramework.dll
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\bin\Debug\System.Data.SQLite.dll
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\bin\Debug\EntityFramework.xml
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\bin\Debug\System.Data.SQLite.xml
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\obj\Debug\CaseStudyMinecraftApp.csproj.CopyComplete

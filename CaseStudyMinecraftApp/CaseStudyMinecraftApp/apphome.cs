@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ namespace CaseStudyMinecraftApp
 {
     public partial class apphome : Form
     {
+        private SQLiteConnection connection;
         public apphome()
         {
             InitializeComponent();
@@ -27,7 +29,15 @@ namespace CaseStudyMinecraftApp
             try
             {
                 string text = listbox.GetItemText(listbox.SelectedItem);
-                MessageBox.Show("U heeft gekozen voor de categorie: " + text + ". \r" + "Klik op 'OK' om de gegevens in de door u geselecteerde categorie te raadplegen!");
+                DialogResult result = MessageBox.Show("U heeft gekozen voor de categorie: " + text, "confirmation", MessageBoxButtons.OKCancel);
+                if (result == DialogResult.OK) {
+                    InitializeComponent();
+                    connection = new SQLiteConnection("Data Source=database.db");
+                    string query = "select * from Categorie where categorieNaam = '" + text + "'";
+                    connection.Open();
+                    var command = new SQLiteCommand(query, connection);
+                    SQLiteDataReader reader = command.ExecuteReader();
+                }
             }
             catch (Exception ex) {
                 MessageBox.Show(ex.Message);
@@ -38,7 +48,10 @@ namespace CaseStudyMinecraftApp
         {
             try
             {
-                MessageBox.Show("Weet u zeker dat u de app wil verlaten?");
+                DialogResult result = MessageBox.Show("Weet u zeker dat u de app wil verlaten?", "confirmation", MessageBoxButtons.OKCancel);
+                if (result == DialogResult.OK) {
+                Application.Exit();
+                }
             }
             catch (Exception ex) {
                 MessageBox.Show(ex.Message);
