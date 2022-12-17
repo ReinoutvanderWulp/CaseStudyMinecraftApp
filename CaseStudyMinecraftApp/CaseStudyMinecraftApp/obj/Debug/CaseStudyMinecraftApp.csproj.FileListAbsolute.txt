@@ -18,3 +18,13 @@ C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseSt
 C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\bin\Debug\System.Data.SQLite.xml
 C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\obj\Debug\CaseStudyMinecraftApp.csproj.CopyComplete
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\bin\Debug\AsyncEnumerable.dll
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\bin\Debug\Mighty.dll
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\bin\Debug\AsyncEnumerable.xml
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\bin\Debug\Mighty.xml
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\bin\Debug\System.Threading.Tasks.Extensions.xml

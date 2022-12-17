@@ -34,6 +34,10 @@
             this.uitlegtekstlabel = new System.Windows.Forms.Label();
             this.exitbutton = new System.Windows.Forms.Button();
             this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.toevoegenlabel = new System.Windows.Forms.Label();
+            this.verwijderenlabel = new System.Windows.Forms.Label();
+            this.toevoegenbutton = new System.Windows.Forms.Button();
+            this.deletebutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,17 +90,60 @@
             // pictureBox
             // 
             this.pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox.Image")));
-            this.pictureBox.Location = new System.Drawing.Point(656, 28);
+            this.pictureBox.Location = new System.Drawing.Point(729, 28);
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.Size = new System.Drawing.Size(303, 469);
             this.pictureBox.TabIndex = 4;
             this.pictureBox.TabStop = false;
+            // 
+            // toevoegenlabel
+            // 
+            this.toevoegenlabel.AutoSize = true;
+            this.toevoegenlabel.Location = new System.Drawing.Point(441, 140);
+            this.toevoegenlabel.Name = "toevoegenlabel";
+            this.toevoegenlabel.Size = new System.Drawing.Size(262, 16);
+            this.toevoegenlabel.TabIndex = 5;
+            this.toevoegenlabel.Text = "Klik hieronder om gegevens toe te voegen:";
+            // 
+            // verwijderenlabel
+            // 
+            this.verwijderenlabel.AutoSize = true;
+            this.verwijderenlabel.Location = new System.Drawing.Point(441, 284);
+            this.verwijderenlabel.Name = "verwijderenlabel";
+            this.verwijderenlabel.Size = new System.Drawing.Size(263, 16);
+            this.verwijderenlabel.TabIndex = 6;
+            this.verwijderenlabel.Text = "Klik hieronder om gegevens te verwijderen:";
+            this.verwijderenlabel.Click += new System.EventHandler(this.verwijderenlabel_Click);
+            // 
+            // toevoegenbutton
+            // 
+            this.toevoegenbutton.Location = new System.Drawing.Point(464, 183);
+            this.toevoegenbutton.Name = "toevoegenbutton";
+            this.toevoegenbutton.Size = new System.Drawing.Size(140, 23);
+            this.toevoegenbutton.TabIndex = 7;
+            this.toevoegenbutton.Text = "gegevens bewerken";
+            this.toevoegenbutton.UseVisualStyleBackColor = true;
+            this.toevoegenbutton.Click += new System.EventHandler(this.toevoegenbutton_Click);
+            // 
+            // deletebutton
+            // 
+            this.deletebutton.Location = new System.Drawing.Point(464, 328);
+            this.deletebutton.Name = "deletebutton";
+            this.deletebutton.Size = new System.Drawing.Size(150, 23);
+            this.deletebutton.TabIndex = 8;
+            this.deletebutton.Text = "gegevens verwijderen";
+            this.deletebutton.UseVisualStyleBackColor = true;
+            this.deletebutton.Click += new System.EventHandler(this.deletebutton_Click);
             // 
             // apphome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1044, 516);
+            this.Controls.Add(this.deletebutton);
+            this.Controls.Add(this.toevoegenbutton);
+            this.Controls.Add(this.verwijderenlabel);
+            this.Controls.Add(this.toevoegenlabel);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.exitbutton);
             this.Controls.Add(this.uitlegtekstlabel);
@@ -117,6 +164,10 @@
         private System.Windows.Forms.Label uitlegtekstlabel;
         private System.Windows.Forms.Button exitbutton;
         private System.Windows.Forms.PictureBox pictureBox;
+        private System.Windows.Forms.Label toevoegenlabel;
+        private System.Windows.Forms.Label verwijderenlabel;
+        private System.Windows.Forms.Button toevoegenbutton;
+        private System.Windows.Forms.Button deletebutton;
     }
 }
 
