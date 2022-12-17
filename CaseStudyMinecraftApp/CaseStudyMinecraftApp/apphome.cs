@@ -13,7 +13,6 @@ namespace CaseStudyMinecraftApp
 {
     public partial class apphome : Form
     {
-        private SQLiteConnection connection;
         public apphome()
         {
             InitializeComponent();
@@ -31,12 +30,9 @@ namespace CaseStudyMinecraftApp
                 string text = listbox.GetItemText(listbox.SelectedItem);
                 DialogResult result = MessageBox.Show("U heeft gekozen voor de categorie: " + text, "confirmation", MessageBoxButtons.OKCancel);
                 if (result == DialogResult.OK) {
-                    InitializeComponent();
-                    connection = new SQLiteConnection("Data Source=database.db");
-                    string query = "select * from Categorie where categorieNaam = '" + text + "'";
-                    connection.Open();
-                    var command = new SQLiteCommand(query, connection);
-                    SQLiteDataReader reader = command.ExecuteReader();
+                    string connection = "Data Source=database.db";
+                    database db = new database(connection);
+                    dynamic query = db.Single("select * from Categorie where categorieNaam = '" + text + "'");
                 }
             }
             catch (Exception ex) {
