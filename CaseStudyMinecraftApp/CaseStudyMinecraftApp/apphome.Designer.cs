@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(apphome));
             this.titeltekstlabel = new System.Windows.Forms.Label();
             this.listbox = new System.Windows.Forms.ListBox();
             this.uitlegtekstlabel = new System.Windows.Forms.Label();
             this.exitbutton = new System.Windows.Forms.Button();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // titeltekstlabel
@@ -80,17 +83,28 @@
             this.exitbutton.UseVisualStyleBackColor = true;
             this.exitbutton.Click += new System.EventHandler(this.exitbutton_Click);
             // 
+            // pictureBox
+            // 
+            this.pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox.Image")));
+            this.pictureBox.Location = new System.Drawing.Point(656, 28);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(303, 469);
+            this.pictureBox.TabIndex = 4;
+            this.pictureBox.TabStop = false;
+            // 
             // apphome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1044, 516);
+            this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.exitbutton);
             this.Controls.Add(this.uitlegtekstlabel);
             this.Controls.Add(this.listbox);
             this.Controls.Add(this.titeltekstlabel);
             this.Name = "apphome";
             this.Text = "apphome";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -102,6 +116,7 @@
         private System.Windows.Forms.ListBox listbox;
         private System.Windows.Forms.Label uitlegtekstlabel;
         private System.Windows.Forms.Button exitbutton;
+        private System.Windows.Forms.PictureBox pictureBox;
     }
 }
 
