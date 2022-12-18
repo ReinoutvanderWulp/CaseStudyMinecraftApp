@@ -9,6 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
+using Application = System.Windows.Forms.Application;
 
 namespace CaseStudyMinecraftApp
 {
@@ -29,11 +31,17 @@ namespace CaseStudyMinecraftApp
             try
             {
                 string text = listbox.GetItemText(listbox.SelectedItem);
-                DialogResult result = MessageBox.Show("U heeft gekozen voor de categorie: " + text, "confirmation", MessageBoxButtons.OKCancel);
+                DialogResult result = MessageBox.Show("U heeft gekozen voor de categorie: " + text, "bevestigingsbericht", MessageBoxButtons.OKCancel);
                 if (result == DialogResult.OK) {
-                    string connection = "Data Source=database.db";
-                    database db = new database(connection);
-                    dynamic query = db.Single("select * from Categorie where categorieNaam = '" + text + "'");
+                    string connectionstring = "Data Source=database.db";
+                    SQLiteConnection connection = new SQLiteConnection(connectionstring);
+                    connection.Open();
+                    string sql = "SELECT * FROM CATEGORIE" + 
+                                 "WHERE categorieNaam = @text;";
+                    SQLiteCommand command = new SQLiteCommand(sql, connection);
+                    command.Parameters.AddWithValue("@text", text);
+                    SQLiteDataReader reader = command.ExecuteReader();
+                    connection.Close();
                 }
             }
             catch (Exception ex) {
@@ -45,7 +53,7 @@ namespace CaseStudyMinecraftApp
         {
             try
             {
-                DialogResult result = MessageBox.Show("Weet u zeker dat u de app wil verlaten?", "confirmation", MessageBoxButtons.OKCancel);
+                DialogResult result = MessageBox.Show("Weet u zeker dat u de app wil verlaten?", "bevestigingsbericht", MessageBoxButtons.OKCancel);
                 if (result == DialogResult.OK) {
                 Application.Exit();
                 }
@@ -67,100 +75,48 @@ namespace CaseStudyMinecraftApp
 
         private void toevoegenbutton_Click(object sender, EventArgs e)
         {
-            try
-            {
-                //Aanmaken
-                Form form = new Form();
-                Button buttonOK = new Button();
-                Button buttonCancel = new Button();
-                Label textlabel = new Label();
-                Label labelid = new Label();
-                TextBox textBoxid = new TextBox();
-                Label labelcategorieNaam = new Label();
-                TextBox textBoxcategorieNaam = new TextBox();
-                Label labelnaam = new Label();
-                TextBox textboxnaam = new TextBox();
-                Label labeltype = new Label();
-                TextBox textboxtype = new TextBox();
-                Label labelbiotoop = new Label();
-                TextBox textboxbiotoop = new TextBox();
-                Label labelexplosieweerstand = new Label();
-                TextBox textboxexplosieweerstand = new TextBox();
-                Label labellichtgevend = new Label();
-                TextBox textboxlichtgevend = new TextBox();
-                Label labeldoorzichtig = new Label();
-                TextBox textboxdoorzichtig = new TextBox();
-                Label labelstapelbaar = new Label();
-                TextBox textboxstapelbaar = new TextBox();
-                Label labelbrandbaar = new Label();
-                TextBox textboxbrandbaar = new TextBox();
-                Label labelzwaartekracht = new Label();
-                TextBox textboxzwaartekracht = new TextBox();
-                Label labelomschrijving = new Label();
-                TextBox textboxomschrijving = new TextBox();
-                //Tekst labels
-                textlabel.Text = "Geef de waarden in:";
-                labelid.Text = "ID:";
-                labelcategorieNaam.Text = "CategorieNaam:";
-                labelnaam.Text = "Naam:";
-                labeltype.Text = "Type:";
-                labelbiotoop.Text = "Biotoop:";
-                labelexplosieweerstand.Text = "Explosieweerstand:";
-                labellichtgevend.Text = "Lichtgevend:";
-                labeldoorzichtig.Text = "Doorzichtig:";
-                labelstapelbaar.Text = "Stapelbaar:";
-                labelbrandbaar.Text = "Brandbaar:";
-                labelzwaartekracht.Text = "Zwaartekracht:";
-                labelomschrijving.Text = "Omschrijving:";
-                //Configureren knoppen
-                buttonOK.DialogResult = DialogResult.OK;
-                buttonCancel.DialogResult = DialogResult.Cancel;
-                buttonOK.Text = "OK";
-                buttonCancel.Text = "Cancel";
-                //Configureren form
-                form.AcceptButton = buttonOK;
-                form.CancelButton = buttonCancel;
-                form.Text = "Confirmation";
-                form.FormBorderStyle = FormBorderStyle.FixedDialog;
-                form.StartPosition = FormStartPosition.CenterScreen;
-                form.Controls.AddRange(new Control[] {textlabel, labelid, textBoxid, });
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            
         }
 
         private void deletebutton_Click(object sender, EventArgs e)
         {
-            try
-            {
-                //Aanmaken
-                Form form = new Form();
-                Button buttonOK = new Button();
-                Button buttonCancel = new Button();
-                Label textlabel = new Label();
-                Label labelid = new Label();
-                TextBox textBoxid = new TextBox();
-                //Tekst Labels
-                textlabel.Text = "Geef in welke waarde verwijderd word:";
-                labelid.Text = "ID:";
-                //Configureren knoppen
-                buttonOK.DialogResult = DialogResult.OK;
-                buttonCancel.DialogResult = DialogResult.Cancel;
-                buttonOK.Text = "OK";
-                buttonCancel.Text = "Cancel";
-                //Configureren form
-                form.AcceptButton = buttonOK;
-                form.CancelButton = buttonCancel;
-                form.Text = "Confirmation";
-                form.FormBorderStyle = FormBorderStyle.FixedDialog;
-                form.StartPosition = FormStartPosition.CenterScreen;
+            
+        }
+
+        private void idlabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void idtextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void voegtoebutton_Click(object sender, EventArgs e)
+        {
+            try {
+                string id = idlabel.Text;
+                string categorienaam = categorienaamlabel.Text;
+                string naam = naamlabel.Text;
+                string type = typelabel.Text;
+                string biotoop = biotooplabel.Text;
+                string omschrijving = omschrijvinglabel.Text;
+                string connectionstring = "Data Source: database.db;Provider=System.Data.SQLite";
+                database db = new database(connectionstring);
+                dynamic command = db.Single("INSERT INTO CATEGORIE"+
+                                            "VALUES(@id, @categorienaam, @naam, @type, @biotoop, @omschrijving)");
+                command.Parameters.AddWithValue("@id", id);
+                command.Parameters.AddWithValue("@categorienaam", categorienaam);
+                command.Parameters.AddWithValue("@naam", naam);
+                command.Parameters.AddWithValue("@type", type);
+                command.Parameters.AddWithValue("@biotoop", biotoop);
+                command.Parameters.AddWithValue("@omschrijving", omschrijving);
+                MessageBox.Show("De waarden werden succesvol toegevoegd", "Bevestigingsbericht", MessageBoxButtons.OKCancel);
             }
-            catch (Exception ex)
-            {
+            catch (Exception ex) {
                 MessageBox.Show(ex.Message);
-            }
+            } 
         }
     }
 }
