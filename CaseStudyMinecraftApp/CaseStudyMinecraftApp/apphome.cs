@@ -36,11 +36,29 @@ namespace CaseStudyMinecraftApp
                     string connectionstring = "Data Source=database.db";
                     SQLiteConnection connection = new SQLiteConnection(connectionstring);
                     connection.Open();
-                    string sql = "SELECT * FROM CATEGORIE" + 
-                                 "WHERE categorieNaam = @text;";
+                    string sql = "SELECT * FROM Categorie WHERE categorieNaam = @text";
                     SQLiteCommand command = new SQLiteCommand(sql, connection);
                     command.Parameters.AddWithValue("@text", text);
                     SQLiteDataReader reader = command.ExecuteReader();
+                    string dataresult = "";
+                    if (reader.HasRows)
+                    {
+                        while (reader.Read()) {
+                            dataresult += "\rid: " + reader["id"];
+                            dataresult += "\rCategorienaam: " + reader["categorieNaam"];
+                            dataresult += "\rNaam: " + reader["naam"];
+                            dataresult += "\rType: " + reader["type"];
+                            dataresult += "\rBiotoop: " + reader["biotoop"];
+                            dataresult += "\rExplosieweerstand: " + reader["explosieWeerstand"];
+                            dataresult += "\rLichtgevend: " + reader["lichtgevend"];
+                            dataresult += "\rDoorzichtig: " + reader["doorzichtig"];
+                            dataresult += "\rStapelbaar: " + reader["stapelbaar"];
+                            dataresult += "\rBrandbaar: " + reader["brandbaar"];
+                            dataresult += "\rZwaartekracht: " + reader["zwaartekracht"];
+                            dataresult += "\rOmschrijving: " + reader["omschrijving"];
+                        }
+                    }
+                    MessageBox.Show(dataresult);
                     connection.Close();
                 }
             }
@@ -104,8 +122,7 @@ namespace CaseStudyMinecraftApp
                 string omschrijving = omschrijvinglabel.Text;
                 string connectionstring = "Data Source: database.db;Provider=System.Data.SQLite";
                 database db = new database(connectionstring);
-                dynamic command = db.Single("INSERT INTO CATEGORIE"+
-                                            "VALUES(@id, @categorienaam, @naam, @type, @biotoop, @omschrijving)");
+                dynamic command = db.Single("INSERT INTO Categorie VALUES(@id, @categorienaam, @naam, @type, @biotoop, @omschrijving)");
                 command.Parameters.AddWithValue("@id", id);
                 command.Parameters.AddWithValue("@categorienaam", categorienaam);
                 command.Parameters.AddWithValue("@naam", naam);

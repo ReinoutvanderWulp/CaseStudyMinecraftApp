@@ -1,0 +1,2 @@
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\obj\Release\CaseStudyMinecraftApp.csproj.AssemblyReference.cache
+C:\Users\Reino\OneDrive - Thomas More\ITF2\DevOps & Security\C#-projecten\CaseStudyMinecraftApp\CaseStudyMinecraftApp\CaseStudyMinecraftApp\obj\Release\CaseStudyMinecraftApp.csproj.SuggestedBindingRedirects.cache

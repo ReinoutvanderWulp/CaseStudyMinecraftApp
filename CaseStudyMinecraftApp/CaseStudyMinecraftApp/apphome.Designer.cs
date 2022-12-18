@@ -67,11 +67,11 @@
             this.listbox.FormattingEnabled = true;
             this.listbox.ItemHeight = 16;
             this.listbox.Items.AddRange(new object[] {
-            "Blokken",
-            "Biotopen",
-            "Speciale Blokken",
-            "Gereedschappen",
-            "Mobs"});
+            "blokken",
+            "biotoop",
+            "speciale blokken",
+            "gereedschappen",
+            "mobs"});
             this.listbox.Location = new System.Drawing.Point(24, 104);
             this.listbox.Name = "listbox";
             this.listbox.Size = new System.Drawing.Size(394, 356);
